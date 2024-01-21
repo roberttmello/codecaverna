@@ -1,4 +1,3 @@
 baseURL = 'https://example.org/'
 languageCode = 'pt-br'
-title = 'Robertt Mello'
-theme = 'ananke'
+title = 'Code Caverna'
