@@ -90,6 +90,58 @@ a {
 
 /* FOOTER END */
 
+
+/* LIST START */
+
+.listItem {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.listItemImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.listItemTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.listItemDetail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.listItemAvatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.listItemCategories {
+    display: flex;
+    gap: 10px;
+}
+
+.listItemCategory {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--bgSoft);
+    color: var(--textSoft);
+    font-size: 14px;
+}
+
+
+/* LIST END */
+
 @media (max-width: 1536px) {
     .container {
         max-width: 1366px;

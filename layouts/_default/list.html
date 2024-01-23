@@ -1,7 +1,28 @@
 {{ define "main" }}
 
 <div class="list">
-    Homepage
+    {{ range .Paginator.Pages }}
+        <div class="listItem">
+            <img src={{ .Params.image }} alt={{.Title}} class="listItemImage" loading="lazy">
+            <div class="listItemTexts">
+                <h1 class="listItemTitle">
+                    <a href={{.Permalink}}>{{.Title}}</a>
+                </h1>
+                <p class="listItemDesc">{{.Params.description}}</p>
+                <div class="listItemDetail">
+                    <img class="listItemAvatar" src={{.Params.avatar}} loading="lazy" alt="Imagem do autor - Carlos Robert">
+                    <span></span>
+                    <time>{{ dateFormat .Site.Params.dateFormat .Date}}</time>
+                </div>
+                <div class="listItemCategories">
+                    <a class="listItemCategory" href="/">Web</a>
+                    <a class="listItemCategory" href="/">Javascript</a>
+                    <a class="listItemCategory" href="/">Vue</a>
+                </div>
+            </div>
+        </div>
+    {{ end }}
+
 </div>
 
 {{ end }}

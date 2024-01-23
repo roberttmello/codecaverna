@@ -1,3 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'pt-br'
 title = 'Code Caverna'
+
+[params]
+    dateFormat = "Jan 2, 2006"
