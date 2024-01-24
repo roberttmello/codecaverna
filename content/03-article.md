@@ -6,7 +6,7 @@ description= "Entendendo o protocolo http"
 image = "/images/http-small.webp"
 imageBig = "/images/http-big.webp"
 categories = ["desenvolvimento web"]
-authors = ["Carlos Robert Dias Melo"]
+authors = ["Carlos Robert"]
 avatar = "/images/perfil.webp"
 +++
 
