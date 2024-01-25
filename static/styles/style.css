@@ -39,7 +39,7 @@ a {
 
 .container {
     max-width: 1366px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     padding-right: 5px;
     margin: auto;
     min-height: 100vh;
@@ -51,6 +51,7 @@ a {
 /* NAVBAR START  */
     .navbar {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         height: 128px;
@@ -123,6 +124,7 @@ a {
 /* FOOTER START  */
 .footer {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     height: 100px;
@@ -157,6 +159,7 @@ a {
 .listItem {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 50px;
     margin-bottom: 50px;
 }
@@ -295,7 +298,7 @@ a {
 }
 
 .singleContent {
-    width: 75%;
+    width: 100%;
     font-size: 20px;
     line-height: 32px;
 }
@@ -317,14 +320,15 @@ a {
     padding: 20px;
 }
 
-.singleRightBar {
+/* .singleRightBar {
     width: 25%;
-}
+} */
+
 /* SINGLE END */
 
 
 /* RIGHT BAR START */
-.rightBar {
+/* .rightBar {
     position: sticky;
     top: 210px;
 }
@@ -333,7 +337,7 @@ a {
     width: 100%;
     max-height: 200px;
     object-fit: cover;
-}
+} */
 /* RIGHT BAR END */
 
 @media (max-width: 1536px) {
@@ -361,17 +365,10 @@ a {
         padding-right: 10px;
     }
 
-    .singleBottom {
-        flex-direction: column-reverse;
-    }
-
     .singleContent {
         width: 100%;
     }
 
-    .singleRightBar {
-        width: 100%;
-    }
 }
 
 @media (max-width: 768px) {

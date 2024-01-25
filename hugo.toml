@@ -5,8 +5,9 @@ title = 'CODECAVERNA'
 paginate = 5
 
 [params]
+    description = "Um blog de tecnologia direto ao ponto"
     dateFormat = "Jan 2, 2006"
 
 [taxonomies]
     category = "categorias"
-    author = "authors"
+    author = "autores"

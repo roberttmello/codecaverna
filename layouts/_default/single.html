@@ -12,11 +12,11 @@
           class="singleAvatar"
         />
         <span
-          >{{range (.GetTerms "authors")}}
+          >{{range (.GetTerms "autores")}}
           <a href="{{.Permalink}}">{{ .Name }}</a>
           {{end}}
         </span>
-          {{range (.GetTerms "categories")}}
+          {{range (.GetTerms "categorias")}}
           <a href="{{.Permalink}}" class="singleCategory">{{ .Name }}</a>
           {{end}}
       </div>

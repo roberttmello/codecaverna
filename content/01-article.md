@@ -3,8 +3,8 @@ title = 'Entendendo o protocolo http - parte 01'
 date = 2024-01-22T22:36:03-03:00
 draft = false
 description= "Entendendo o protocolo http"
-categories = ["desenvolvimento web", "css", "js"]
-authors = ["Carlos Robert"]
+categorias = ["desenvolvimento web", "css", "js"]
+autores = ["Carlos Robert"]
 avatar = "/images/perfil.webp"
 +++
 

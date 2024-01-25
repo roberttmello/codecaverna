@@ -16,14 +16,14 @@
           alt="Imagem do autor - Carlos Robert"
         />
         <span class="listItemAuthorName">
-          {{ range (.GetTerms "authors") }}
-            <a href={{ .Permalink }}>{{ .Name }}</a>
+          {{ range (.GetTerms "autores") }}
+            <span>{{ .Name }}</span>
           {{end}}
         </span> <span class="listItemSeparator">|</span> 
         <time>{{ dateFormat .Site.Params.dateFormat .Date}}</time>
       </div>
       <div class="listItemCategories">
-        {{ range ( .GetTerms "categories" ) }}
+        {{ range ( .GetTerms "categorias" ) }}
           <a class="listItemCategory" href={{ .Permalink }}>{{ .Name }}</a>
         {{ end }}
       </div>
