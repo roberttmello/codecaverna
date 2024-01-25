@@ -99,6 +99,11 @@ a {
 /* FOOTER END */
 
 /* LIST START */
+
+.list {
+    margin-top: 50px;
+}
+
 .listItem {
     display: flex;
     align-items: center;
@@ -191,13 +196,6 @@ a {
     font-size: 14px;
 }
 
-/* .singleHeadImg {
-    flex: 1;
-    max-height: 350px;
-    object-fit: cover;
-    margin-top: 28px;
-} */
-
 .singleBottom {
     display: flex;
     justify-content: space-between;
@@ -231,7 +229,6 @@ a {
 .singleRightBar {
     width: 25%;
 }
-
 /* SINGLE END */
 
 
