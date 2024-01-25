@@ -3,10 +3,8 @@ title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 date = {{ .Date }}
 draft = false
 description= ""
-image = ""
-imageBig = ""
-categories = ["general", "web"]
+categories = ["web"]
 authors = ["Carlos Robert Dias Melo"]
-avatar = "/images/perfil.jpg"
+avatar = "/images/perfil.webp"
 +++
 

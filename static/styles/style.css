@@ -7,7 +7,7 @@
     --bg: #0b1529;
     --bgSoft: #1f3050;
     --text: #dee4eb;
-    --textSoft: #92a2b2;
+    --textSoft: #abbac9;
     --contrast: #ff6e07;
 }
 
@@ -25,6 +25,12 @@ body {
     background: var(--bg);
     color: var(--text);
 }
+
+body.light {
+   --bg: #dee4eb;
+   --text: #0b1529;
+}
+
 
 a {
     color: inherit;
@@ -82,6 +88,36 @@ a {
         padding: 5px;
         border-radius: 10px;
     }
+
+    .toggle {
+        width: 40px;
+        height: 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background-color: var(--bgSoft);
+        border: 0.5px solid var(--textSoft);
+        padding: 5px;
+        position: relative;
+    }
+
+    .ball {
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        background-color: var(--textSoft);
+        border: 1px solid var(--bgSoft);
+    }
+
+    .light .ball {
+        left: unset;
+        right: 0;
+    }
+
 /* NAVBAR END  */
 
 /* FOOTER START  */
@@ -173,6 +209,37 @@ a {
 .listItemCategory:hover {
     color: var(--contrast);
 }
+
+.pagination {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.page-item {
+    border: 1px solid var(--textSoft);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.page-item.active {
+    background-color: var(--text);
+    color: var(--bg);
+}
+
+.page-item.disabled {
+    background-color: var(--bgSoft);
+    cursor: not-allowed;
+}
+
 /* LIST END */
 
 /* SINGLE START */
@@ -313,6 +380,10 @@ a {
     }
     .links {
         font-size: 14px;
+    }
+
+    .searchButton span {
+        display: none;
     }
 }
 

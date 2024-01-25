@@ -1,9 +1,9 @@
 +++
-title = 'Entendendo o protocolo http - parte 03'
+title = 'Entendendo o protocolo http - parte 06'
 date = 2024-01-22T22:36:03-03:00
 draft = false
 description= "Entendendo o protocolo http"
-categories = ["mongodb", "sql", "html"]
+categories = ["desenvolvimento web", "hugo"]
 authors = ["Carlos Robert"]
 avatar = "/images/perfil.webp"
 +++

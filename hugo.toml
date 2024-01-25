@@ -1,10 +1,12 @@
 baseURL = 'https://codecaverna.pages.dev/'
 languageCode = 'pt-br'
-title = 'Code Caverna'
+title = 'CODECAVERNA'
+
+paginate = 5
 
 [params]
     dateFormat = "Jan 2, 2006"
 
 [taxonomies]
-    category = "categories"
+    category = "categorias"
     author = "authors"
