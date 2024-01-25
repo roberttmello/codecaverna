@@ -3,14 +3,6 @@
 <div class="list">
   {{ range .Paginator.Pages }}
   <div class="listItem">
-    <img
-      src={{
-      .Params.image
-      }}
-      alt="{{.Title}}"
-      class="listItemImage"
-      loading="lazy"
-    />
     <div class="listItemTexts">
       <h1 class="listItemTitle">
         <a href="{{.Permalink}}">{{.Title}}</a>
@@ -23,11 +15,11 @@
           loading="lazy"
           alt="Imagem do autor - Carlos Robert"
         />
-        <span>
+        <span class="listItemAuthorName">
           {{ range (.GetTerms "authors") }}
             <a href={{ .Permalink }}>{{ .Name }}</a>
           {{end}}
-        </span>
+        </span> <span class="listItemSeparator">|</span> 
         <time>{{ dateFormat .Site.Params.dateFormat .Date}}</time>
       </div>
       <div class="listItemCategories">

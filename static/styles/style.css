@@ -7,7 +7,8 @@
     --bg: #0b1529;
     --bgSoft: #1f3050;
     --text: #dee4eb;
-    --textSoft: #cbd2d9;
+    --textSoft: #92a2b2;
+    --contrast: #ff6e07;
 }
 
 * {
@@ -46,7 +47,7 @@ a {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 178px;
+        height: 128px;
         position: sticky;
         top: 0;
         background-color: var(--bg);
@@ -58,6 +59,7 @@ a {
         font-family: "Rubik Maps", monospace;
         font-size: 48px;
         text-transform: uppercase;
+        color: var(--contrast);
     }
 
     .links {
@@ -65,6 +67,10 @@ a {
         align-items: center;
         gap: 20px;
         font-size: 20px;
+    }
+
+    .links a:hover {
+        color: var(--contrast);
     }
 
     .searchButton {
@@ -85,6 +91,7 @@ a {
     justify-content: space-between;
     height: 100px;
     font-size: 14px;
+    color: var(--textSoft);
 }
 
 .social {
@@ -94,7 +101,14 @@ a {
 
 .footerLinks a:first-child {
     font-family: "Rubik Maps", monospace;
+    color: var(--contrast);
 }
+
+.footerLinksSeparator {
+    color: var(--bgSoft);
+}
+
+
 
 /* FOOTER END */
 
@@ -111,16 +125,14 @@ a {
     margin-bottom: 50px;
 }
 
-.listItemImage {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
 .listItemTexts {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.listItemTitle:hover {
+    color: var(--contrast);
 }
 
 .listItemDetail {
@@ -137,6 +149,14 @@ a {
     object-fit: cover;
 }
 
+.listItemAuthorName:hover {
+    color: var(--contrast);
+}
+
+.listItemSeparator {
+    color: var(--bgSoft);
+}
+
 .listItemCategories {
     display: flex;
     gap: 10px;
@@ -148,6 +168,10 @@ a {
     background-color: var(--bgSoft);
     color: var(--textSoft);
     font-size: 14px;
+}
+
+.listItemCategory:hover {
+    color: var(--contrast);
 }
 /* LIST END */
 
