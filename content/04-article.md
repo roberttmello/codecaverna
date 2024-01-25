@@ -5,7 +5,7 @@ draft = false
 description= "Entendendo o protocolo http"
 image = "/images/http-small.webp"
 imageBig = "/images/http-big.webp"
-categories = ["desenvolvimento web"]
+categories = ["desenvolvimento web", "js", "nest"]
 authors = ["Carlos Robert"]
 avatar = "/images/perfil.webp"
 +++
