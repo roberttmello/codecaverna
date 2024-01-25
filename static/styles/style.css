@@ -1,6 +1,7 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Rubik+Maps&display=swap');
 
 :root {
     --bg: #0b1529;
@@ -45,17 +46,18 @@ a {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 100px;
+        height: 178px;
         position: sticky;
         top: 0;
         background-color: var(--bg);
-        border-bottom: 2px solid var(--bgSoft);
+        border-bottom: 1px solid var(--bgSoft);
         z-index: 10;
     }
 
-    .logo {
-        font-weight: bold;
-        font-size: 24px;
+    .logo a{
+        font-family: "Rubik Maps", monospace;
+        font-size: 48px;
+        text-transform: uppercase;
     }
 
     .links {
@@ -88,6 +90,10 @@ a {
 .social {
     display: flex;
     gap: 10px;
+}
+
+.footerLinks a:first-child {
+    font-family: "Rubik Maps", monospace;
 }
 
 /* FOOTER END */
@@ -232,7 +238,7 @@ a {
 /* RIGHT BAR START */
 .rightBar {
     position: sticky;
-    top: 100px;
+    top: 210px;
 }
 
 .rightBarImg {
@@ -240,9 +246,6 @@ a {
     max-height: 200px;
     object-fit: cover;
 }
-
-
-
 /* RIGHT BAR END */
 
 @media (max-width: 1536px) {
