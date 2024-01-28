@@ -1,14 +1,13 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Rubik+Maps&display=swap');
 
 :root {
     --bg: #0b1529;
     --bgSoft: #1f3050;
     --text: #dee4eb;
     --textSoft: #abbac9;
-    --contrast: #ff6e07;
+    --contrast: #ff5f1f;
 }
 
 * {
@@ -62,11 +61,8 @@ a {
         z-index: 10;
     }
 
-    .logo a{
-        font-family: "Rubik Maps", monospace;
-        font-size: 48px;
-        text-transform: uppercase;
-        color: var(--contrast);
+    .logo img{
+        max-width: 96px;
     }
 
     .links {
@@ -132,19 +128,34 @@ a {
     color: var(--textSoft);
 }
 
-.social {
+.footerLinks {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
-.footerLinks a:first-child {
-    font-family: "Rubik Maps", monospace;
+.footerLinks .category:hover {
+    color: var(--contrast);
+}
+
+.footerLinks .sitemap:hover {
     color: var(--contrast);
 }
 
 .footerLinksSeparator {
     color: var(--bgSoft);
 }
+
+.footer img {
+    max-width: 32px;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
 
 
 
