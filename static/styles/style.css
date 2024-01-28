@@ -38,7 +38,6 @@ a {
 
 .container {
     max-width: 1366px;
-    /* padding-left: 50px; */
     padding-right: 5px;
     margin: auto;
     min-height: 100vh;
@@ -155,14 +154,9 @@ a {
     display: flex;
     gap: 10px;
 }
-
-
-
-
 /* FOOTER END */
 
 /* LIST START */
-
 .list {
     margin-top: 50px;
 }
@@ -253,11 +247,9 @@ a {
     background-color: var(--bgSoft);
     cursor: not-allowed;
 }
-
 /* LIST END */
 
 /* SINGLE START */
-
 .singleHead {
     display: flex;
     align-items: center;
@@ -330,26 +322,6 @@ a {
     overflow-y: scroll;
     padding: 20px;
 }
-
-/* .singleRightBar {
-    width: 25%;
-} */
-
-/* SINGLE END */
-
-
-/* RIGHT BAR START */
-/* .rightBar {
-    position: sticky;
-    top: 210px;
-}
-
-.rightBarImg {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-} */
-/* RIGHT BAR END */
 
 @media (max-width: 1536px) {
     .container {
