@@ -360,6 +360,10 @@ a {
         width: 100%;
     }
 
+    .singleHeadTitle {
+        font-size: 32px;
+    }
+
 }
 
 @media (max-width: 768px) {
