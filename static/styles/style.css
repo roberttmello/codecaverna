@@ -213,6 +213,9 @@ a {
     background-color: var(--bgSoft);
     color: var(--textSoft);
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .listItemCategory:hover {
@@ -293,6 +296,9 @@ a {
     background-color: var(--bgSoft);
     color: var(--textSoft);
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .singleBottom {
