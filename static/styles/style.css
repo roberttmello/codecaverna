@@ -61,7 +61,7 @@ a {
     }
 
     .logo img{
-        max-width: 96px;
+        max-width: 64px;
     }
 
     .links {
@@ -121,7 +121,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
     height: 100px;
     font-size: 14px;
     color: var(--textSoft);
@@ -131,7 +132,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .footerLinks .category:hover {
@@ -147,7 +148,7 @@ a {
 }
 
 .footer img {
-    max-width: 32px;
+    max-width: 24px;
 }
 
 .social {
@@ -365,6 +366,12 @@ a {
     .searchButton span {
         display: none;
     }
+
+    .footer {
+        flex-direction: column;
+        gap: 5px;
+    }
+
 }
 
 @media (max-width: 640px) {
