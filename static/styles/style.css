@@ -40,12 +40,12 @@ a {
 
 .container {
     max-width: 1200px;
-    padding-right: 5px;
     margin: auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* background-color: tomato; */
 }
 
 /* NAVBAR START  */
@@ -162,6 +162,7 @@ a {
 /* LIST START */
 .list {
     margin-top: 50px;
+    padding: 0 4px;
 }
 
 .listItem {
@@ -256,6 +257,11 @@ a {
 /* LIST END */
 
 /* SINGLE START */
+
+.single {
+    padding: 0 4px;
+}
+
 .singleHead {
     display: flex;
     align-items: center;
