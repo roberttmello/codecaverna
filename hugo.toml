@@ -1,5 +1,6 @@
 baseURL = 'https://codecaverna.tech/'
 languageCode = 'pt-br'
+defaultContentLanguage = 'pt-br'
 title = 'CODECAVERNA'
 
 paginate = 5

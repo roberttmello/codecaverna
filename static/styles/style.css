@@ -37,7 +37,7 @@ a {
 }
 
 .container {
-    max-width: 1366px;
+    max-width: 1200px;
     padding-right: 5px;
     margin: auto;
     min-height: 100vh;
@@ -165,7 +165,7 @@ a {
 .listItem {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 50px;
     margin-bottom: 50px;
 }
@@ -331,19 +331,7 @@ a {
     padding: 20px;
 }
 
-@media (max-width: 1536px) {
-    .container {
-        max-width: 1366px;
-    }
-}
-
-@media (max-width: 1366px) {
-    .container {
-        max-width: 1280px;
-    }
-}
-
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
     .container {
         max-width: 1024px;
     }
