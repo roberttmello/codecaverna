@@ -1,3 +1,5 @@
-# My blog
+# CODECAVERNA Blog
 
-This is my blog.
+`Um blog de tecnologia direto ao ponto, simples sem ser simplório!`
+
+😎👌
