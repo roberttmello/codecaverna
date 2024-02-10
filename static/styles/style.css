@@ -7,7 +7,7 @@
     --bgSoft: #1f3050;
     --text: #dee4eb;
     --textSoft: #abbac9;
-    --contrast: #ff5f1f;
+    --contrast: #ff7a00;
     --fontFamilyParagraphs: 'IBM Plex Mono', monospace;
     --fontFamilyTitles: 'Russo One', sans-serif;
 }
@@ -63,7 +63,7 @@ a {
     }
 
     .logo img{
-        max-width: 64px;
+        max-width: 128px;
     }
 
     .links {
@@ -150,7 +150,7 @@ a {
 }
 
 .footer img {
-    max-width: 24px;
+    max-width: 48px;
 }
 
 .social {
