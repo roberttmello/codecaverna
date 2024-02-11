@@ -31,3 +31,22 @@ paginate = 5
     style = 'github-dark'
     tabWidth = 4
 
+
+[comments]
+  # Comment provider:
+  provider = "giscus"
+
+  # Which page types are commentable?
+  commentable = {page = true, post = true, docs = false, project = false, publication = true, talk = false}
+
+  # Configuration of giscus
+  [comments.giscus]
+    repo = "roberttmello/codecaverna-comments" # Repo where the comments will live
+    repo_id = "R_kgDOLQ3K8Q" # Repo where the comments will live
+    category = "General" # Repo where the comments will live
+    category_id = "DIC_kwDOLQ3K8c4CdIdO" # Repo where the comments will live
+    mapping = "pathname" # How Utterances will match comment to page
+    label = "comment" # Label applied to issue by utteranc.es bot
+    theme = "dark" # What theme to use
+    reactions_enabled = 1
+
