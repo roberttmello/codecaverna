@@ -10,3 +10,7 @@ hugo.linux
 
 # Temporary lock file while building
 /.hugo_build.lock
+
+# VSCode files and folders
+
+.vscode
