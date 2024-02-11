@@ -14,3 +14,9 @@ toggle.addEventListener("click", () => {
 const yearSpan = document.getElementById('year');
 const year = new Date().getFullYear();
 yearSpan.innerText = year;
+
+// Add target="_blank" on article links
+const singleContentLinks = document.querySelectorAll('p a');
+singleContentLinks.forEach( element => {
+    element.setAttribute("target", "_blank");
+});
