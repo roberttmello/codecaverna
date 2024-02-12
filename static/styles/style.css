@@ -174,12 +174,17 @@ a {
   justify-content: left;
   gap: 50px;
   margin-bottom: 50px;
+  
 }
 
 .listItemTexts {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.listItemTitle {
+  margin: 0;
 }
 
 .listItemTitle:hover {
@@ -191,6 +196,7 @@ a {
   align-items: center;
   gap: 10px;
   font-size: 1rem;
+  
 }
 
 .listItemAvatar {
