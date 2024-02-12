@@ -65,6 +65,10 @@ a {
   z-index: 10;
 }
 
+.navBarSeparator {
+  color: var(--bgSoft);
+}
+
 .logo img {
   max-width: 128px;
 }
