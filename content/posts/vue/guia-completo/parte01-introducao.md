@@ -1,15 +1,15 @@
 +++
-title = 'Vue JS Curso Completo - Parte 01 - Introdução'
+title = 'Vue JS Guia Completo - Parte 01 - Introdução'
 date = 2024-02-10T20:26:15-03:00
 draft = false
-categorias = ["web", "javascript", "vue"]
+categorias = ["frontend", "javascript", "vue"]
 autores = ["Carlos Robert"]
 avatar = "/images/perfil.webp"
 +++
 
 ## Introdução
 
-Olá meus **queridos geradores de bugs** (eu também estou incluso nesse clube, obviamente), sejam bem vindo ao **Curso Completo de Vue JS** 😎 do **CODECAVERNA**. O objetivo dessa série de artigos é te apresentar as principais características desse framework javascript tão bacana e ao fim dessa série, se você se dedicou praticando o conteúdo abordado aqui, imagino que você estará pronto para criar suas próprias aplicações Vue.
+Olá meus **queridos geradores de bugs** (me too, obviously), sejam bem vindo ao **Guia Completo de Vue JS** 😎 do **CODECAVERNA**. O objetivo dessa série de artigos é te apresentar as principais características desse framework javascript tão bacana e ao fim dessa série, se você se dedicou praticando o conteúdo abordado aqui, imagino que estará pronto para criar suas próprias aplicações Vue.
 
 A ideia desse e qualquer outro material compartilhado aqui nesse blog, é que possamos aprender juntos. Portanto se você perceber alguma incoerência no conteúdo técnico, algum erro de português, etc; peço por favor que comentem e entrem em contato para que sejam feitas as devidas correções. Vamos fortalecer mais a comunidade compartilhando conhecimento de forma gratuita e com qualidade! Bora começar! 👊👊👊
 
@@ -41,8 +41,8 @@ Um componente de arquivo único, como o nome sugere, encapsula a lógica do comp
 
 ```vue
 <script setup>
-import { ref } from 'vue'
-const count = ref(0)
+import { ref } from "vue";
+const count = ref(0);
 </script>
 
 <template>
@@ -54,7 +54,6 @@ button {
   font-weight: bold;
 }
 </style>
-
 ```
 
 Então é isso, basicamente cada componente possui as três áreas de código **`<script>, <style> e <template>`**. E se você viu as palavras **setup, ref e scoped** no código acima e começou a surtar😁, relaxa que é tranquilex demais e nos próximos artigos vamos estudar todos esses detalhes.
@@ -65,7 +64,7 @@ Os componentes Vue podem ser criados usando dois estilos diferentes de API: a AP
 
 ### API de Opções (Options API)
 
-Nesse estilo de API usamos um objeto de opções tais como **data**, **methods**, **mounted**, etc. As propriedades definidas por essas opções você pode acessá-las a através do **this**. Veja o exemplo abaixo, também tirado da documentação oficial, **lembre-se, sempre consulte a documentação**.  
+Nesse estilo de API usamos um objeto de opções tais como **data**, **methods**, **mounted**, etc. As propriedades definidas por essas opções você pode acessá-las a através do **this**. Veja o exemplo abaixo, também tirado da documentação oficial, **lembre-se, sempre consulte a documentação**.
 
 ```vue
 <script>
@@ -74,8 +73,8 @@ export default {
   // tornam-se estados reativos e serão expostas no `this`.
   data() {
     return {
-      count: 0
-    }
+      count: 0,
+    };
   },
 
   // Os métodos são funções que alteram o estado e acionam atualizações.
@@ -83,17 +82,17 @@ export default {
   // modelos de marcação.
   methods: {
     increment() {
-      this.count++
-    }
+      this.count++;
+    },
   },
 
   // Os gatilhos do ciclo de vida são chamados em diferentes fases
   // do ciclo de vida do componente.
   // Esta função será chamada quando o componente estiver montado.
   mounted() {
-    console.log(`The initial count is ${this.count}.`)
-  }
-}
+    console.log(`The initial count is ${this.count}.`);
+  },
+};
 </script>
 
 <template>
@@ -106,28 +105,27 @@ export default {
 Na API de Composição, definimos a lógica do componente importando funções da API. Normalmente você verá nos nossos componentes de arquivo único a área de script com o atributo **setup**, dessa maneira:
 
 ```vue
-<script setup> </script>
-
+<script setup></script>
 ```
 
 Esse atributo **setup** permite que o Vue faça algumas transformações no momento da compilação e nos permite escrever menos código na hora de criar/manipular nossos componentes, vamos ver mais sobre isso depois. Veja abaixo um componente que faz a mesma coisa que o mostrado anteriormente mas agora usando o estilo da API de Composição:
 
 ```vue
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from "vue";
 
 // o estado reativo
-const count = ref(0)
+const count = ref(0);
 
 // as funções que alteram o estado e acionam atualizações
 function increment() {
-  count.value++
+  count.value++;
 }
 
 // os gatilhos de ciclo de vida
 onMounted(() => {
-  console.log(`The initial count is ${count.value}.`)
-})
+  console.log(`The initial count is ${count.value}.`);
+});
 </script>
 
 <template>
